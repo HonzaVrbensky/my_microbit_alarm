@@ -40,3 +40,7 @@ def received_data(name, value):
     if name == "learn" and value == 1:
         if remote_serial not in list:
             list.append(remote_serial)
+           if name == "learn" and value == 1:
+            music.play_melody("C", 120)
+           if name == "learn" and value == 0:
+            music.stop_all_sounds()
